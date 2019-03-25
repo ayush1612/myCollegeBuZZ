@@ -18,7 +18,7 @@ var express     =require("express"),
 
 
 // mongoose.connect("mongodb://localhost/my_collegebuzz",{useNewUrlParser: true})
-
+console.log(process.env.COLLEGEBASEURL)
 mongoose.connect(process.env.COLLEGEBASEURL,{useNewUrlParser: true})
 
 app.use(bodyParser.urlencoded({extended:true}))
