@@ -17,7 +17,7 @@ var express     =require("express"),
 
 
 
-mongoose.connect("mongodb://localhost/yelp_camp",{useNewUrlParser: true})
+mongoose.connect("mongodb://localhost/my_collegebuzz",{useNewUrlParser: true})
 
 // mongoose.connect(process.env.DATABASEURL,{useNewUrlParser: true})
 
@@ -70,7 +70,7 @@ app.get("/",function(req,res){
 // });
 
 
-PORT=1000;
+PORT=1234;
 app.listen(PORT,function(){
     console.log("Ready");
 })
