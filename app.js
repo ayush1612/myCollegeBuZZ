@@ -17,9 +17,9 @@ var express     =require("express"),
 
 
 
-mongoose.connect("mongodb://localhost/my_collegebuzz",{useNewUrlParser: true})
+// mongoose.connect("mongodb://localhost/my_collegebuzz",{useNewUrlParser: true})
 
-// mongoose.connect(process.env.DATABASEURL,{useNewUrlParser: true})
+mongoose.connect(process.env.DATABASEURL,{useNewUrlParser: true})
 
 
 app.use(bodyParser.urlencoded({extended:true}))
@@ -65,12 +65,12 @@ app.get("/",function(req,res){
     res.render("landing");
 })
 
-// app.listen(process.env.PORT,process.env.IP,function(){
-//     console.log("Ready");
-// });
-
-
-PORT=1234;
-app.listen(PORT,function(){
+app.listen(process.env.PORT,process.env.IP,function(){
     console.log("Ready");
-})
+});
+
+
+// PORT=1234;
+// app.listen(PORT,function(){
+//     console.log("Ready");
+// })
