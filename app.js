@@ -19,9 +19,9 @@ var express     =require("express"),
 
 // mongoose.connect("mongodb://localhost/my_collegebuzz",{useNewUrlParser: true})
 
-mongoose.connect(process.env.DATABASEURL,{useNewUrlParser: true})
+// mongoose.connect(process.env.DATABASEURL,{useNewUrlParser: true})
 
-
+mongoose.connect("mongodb+srv://ayush:JAIMAAKAALI@mydatabase-jqhvs.mongodb.net/test?retryWrites=true",{useNewUrlParser: true})
 app.use(bodyParser.urlencoded({extended:true}))
 app.set("view-engine","ejs");
 app.use(express.static(__dirname+"/public"));
