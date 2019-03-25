@@ -1,0 +1,82 @@
+body {
+    background-color: #000;
+  }
+  #landing-header {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-top: 40vh;
+  }
+
+  .slideshow { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .slideshow li { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 50s linear infinite; 
+  }
+
+  .slideshow li:nth-child(1) { 
+    background-image: url(https://images.pexels.com/photos/1454360/pexels-photo-1454360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  }
+  .slideshow li:nth-child(2) { 
+    background-image: url(https://images.pexels.com/photos/159740/library-la-trobe-study-students-159740.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    animation-delay: 10s; 
+  }
+  .slideshow li:nth-child(3) { 
+    background-image: url(https://images.pexels.com/photos/1850021/pexels-photo-1850021.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940/emvhOnb.jpg);
+    animation-delay: 20s; 
+  }
+  .slideshow li:nth-child(4) { 
+    background-image: url(https://images.pexels.com/photos/220311/pexels-photo-220311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940.com/2LSMCmJ.jpg);
+    animation-delay: 30s; 
+  }
+  .slideshow li:nth-child(5) { 
+    background-image: url(https://images.pexels.com/photos/34751/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500.jpg);
+    animation-delay: 40s; 
+  }
+
+  @keyframes imageAnimation { 
+    0% { 
+      opacity: 0; 
+      animation-timing-function: ease-in;
+    }
+    10% {
+      opacity: 1;
+      animation-timing-function: ease-out;
+    }
+    20% {
+      opacity: 1
+    }
+    30% {
+      opacity: 0
+    }
+  }
+
+  /* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}
+
+#myCollegeBuZZ{
+  color: white;
+  text-shadow: 0 0 10px black;
+}
