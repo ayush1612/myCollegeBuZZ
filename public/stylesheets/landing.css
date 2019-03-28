@@ -39,19 +39,19 @@ body {
   }
   .slideshow li:nth-child(2) { 
     background-image: url(https://images.pexels.com/photos/159740/library-la-trobe-study-students-159740.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-    animation-delay: 10s; 
+    animation-delay: 5s; 
   }
   .slideshow li:nth-child(3) { 
     background-image: url(https://images.pexels.com/photos/1850021/pexels-photo-1850021.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940/emvhOnb.jpg);
-    animation-delay: 20s; 
+    animation-delay: 10s; 
   }
   .slideshow li:nth-child(4) { 
     background-image: url(https://images.pexels.com/photos/220311/pexels-photo-220311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940.com/2LSMCmJ.jpg);
-    animation-delay: 30s; 
+    animation-delay: 15s; 
   }
   .slideshow li:nth-child(5) { 
     background-image: url(https://images.pexels.com/photos/34751/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500.jpg);
-    animation-delay: 40s; 
+    animation-delay: 20s; 
   }
 
   @keyframes imageAnimation { 
