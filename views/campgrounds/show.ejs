@@ -16,9 +16,9 @@
                 <div class="caption-full">
                     <h4 class="pull-right">Scale:<%= campground.scale %></h4>
                     <h4>Title: <a><%= campground.name %></a></h4>
-                    <p><strong>About the event: <%= campground.description %></strong></p>
+                    <p><strong>About the event:  <%= campground.description %></strong></p>
                     <p>
-                        <em>Submitted by: <%= campground.author.username %>, <%= moment(campground.createdAt).fromNow() %></em>
+                        <em>Submitted by:<a href="/users/<%=campground.author.id%>"><%= campground.author.username %></a> , <%= moment(campground.createdAt).fromNow() %></em>
                       </p>
                     <% if((currentUser && campground.author.id.equals(currentUser._id))||(currentUser && currentUser.isAdmin)){ %>
                         <a class="btn btn-xs btn-warning" href="/campgrounds/<%= campground._id %>/edit">Edit Event</a>
