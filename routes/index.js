@@ -13,7 +13,12 @@ router.get("/register",function(req,res){
 });
 
 router.post("/register",function(req,res){
-    var newUser = new User({username:req.body.username,email:req.body.email,admincode:req.body.admincode,college:req.body.college});
+    
+    var newUser = new User({username:req.body.username,email:req.body.email ,college:req.body.college});
+
+    if(req.body.admincode==='secret1234')
+        newUser.isAdmin=true;
+
     User.register(newUser,req.body.password,function(err,user){
         if(err){
             console.log(err);
