@@ -18,8 +18,8 @@
                     <h4>Title: <a><%= campground.name %></a></h4>
                     <p><strong>About the event: <%= campground.description %></strong></p>
                     <p>
-                        <em>Submitted by <%= campground.author.username %></em>
-                    </p>
+                        <em>Submitted by: <%= campground.author.username %>, <%= moment(campground.createdAt).fromNow() %></em>
+                      </p>
                     <% if(currentUser && campground.author.id.equals(currentUser._id)){ %>
                         <a class="btn btn-xs btn-warning" href="/campgrounds/<%= campground._id %>/edit">Edit Event</a>
                         <form class="delete-form" action="/campgrounds/<%= campground._id %>?_method=DELETE" method="POST">
@@ -39,7 +39,7 @@
                 <div class="row">
                     <strong><div class="col-md-9">
                         <strong><%= comment.author.username %></strong>
-                        <span class="pull-right">10 days ago</span>
+                        <span class="pull-right"><%= moment(comment.createdAt).fromNow() %></span>
                         <p>
                             <%- comment.text %>
                         </p>
