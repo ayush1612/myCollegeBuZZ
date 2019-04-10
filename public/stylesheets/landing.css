@@ -71,6 +71,21 @@ body {
     }
   }
 
+  #typerhead{
+    font-family: 'Fruktur', cursive;
+    font-weight: 800;
+    color: white; 
+    /* text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue; */
+    text-shadow:1px 1px 2px black,0 0 1em black, 0 0 0.2em black;
+    }
+.typer{
+  font-family: 'VT323', monospace;
+  font-weight: 800;
+  color: white; 
+  text-shadow: 1px 1px 2px black, 0 0 0.2em lightblue;
+
+}
+    
   /* Older browser support - .no-cssanimations class added by modernizr */
 .no-cssanimations .slideshow li {
 	opacity: 1;
