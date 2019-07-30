@@ -13,7 +13,6 @@ Share whatever event is going on in your college at this place.
 <br>
 
 ## Tech Stack:
-<br>
 Front-end: HTML5,CSS3,Bootstrap4,Javascript
 <br>
 Backend : Node.JS
