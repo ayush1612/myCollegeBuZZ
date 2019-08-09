@@ -22,6 +22,8 @@
     "passport-local-mongoose": "^5.0.1",
     "require": "^2.4.20"
   },
-  "devDependencies": {},
-  "description": ""
+  "devDependencies": {
+  "mocha": "^6.0.0"
+  },
+  "description": "A random website to share events going in a college"
 }
