@@ -1,3 +1,4 @@
+// Required Dependencies
 var express     =require("express"),
     app         =express(),
     bodyParser  =require('body-parser'),
@@ -60,13 +61,13 @@ var bodyParser=require('body-parser');
 app.use(bodyParser.urlencoded({extended:true}));
 
 app.set("view engine","ejs")
-//connecting the root page
+//Rendering the landing page!
 app.get("/",function(req,res){
     res.render("landing");
 })
 
 app.listen(process.env.PORT,process.env.IP,function(){
-    console.log("Ready");
+    console.log("Running on localhost");
 });
 
 
