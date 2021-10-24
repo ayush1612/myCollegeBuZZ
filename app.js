@@ -66,11 +66,6 @@ app.get("/",function(req,res){
 })
 
 app.listen(process.env.PORT,process.env.IP,function(){
-    console.log("Ready");
+    console.log("Runnning");
 });
 
-
-// PORT=1234;
-// app.listen(PORT,function(){
-//     console.log("Ready");
-// })
